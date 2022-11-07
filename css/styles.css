@@ -203,7 +203,7 @@ img {
 
 /* ========== hero section ========== */
 
-.hero {
+.hero-section {
   text-align: center;
   color: var(--primary-white-color);
   max-width: 1600px;
@@ -220,7 +220,7 @@ img {
   background-position: center;
 }
 
-.hero-title {
+.hero-section__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -232,29 +232,8 @@ img {
   margin-left: auto;
 }
 
-.main-btn {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  border-color: transparent;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-
-  padding: 10px 20px;
+.hero-section__btn {
   margin-top: 30px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.main-btn:focus,
-.main-btn:hover {
-  background-color: var(--active-btn-color);
 }
 
 /* ----------------modal-------------------- */
@@ -483,22 +462,7 @@ img {
 /* ---------------send-btn---------------- */
 
 .send-btn {
-  width: 200px;
-  height: 50px;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: transparent;
   margin-top: 30px;
-  cursor: pointer;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.send-btn:hover,
-.send-btn:focus {
-  background-color: var(--active-btn-color);
 }
 
 /* features-section */
@@ -854,31 +818,10 @@ img {
   align-items: center;
   justify-content: center;
   gap: 25px;
-  width: 200px;
-  height: 50px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: transparent;
-  cursor: pointer;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-icon {
   fill: var(--primary-white-color);
-}
-
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  background-color: var(--active-btn-color);
 }
 
 .filter-btn {
@@ -1002,6 +945,33 @@ img {
 }
 
 /* ===================== */
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  border-color: transparent;
+
+  width: 200px;
+  height: 50px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:focus,
+.button:hover {
+  background-color: var(--active-btn-color);
+}
+
 .link--active-color:hover,
 .link--active-color:focus {
   color: var(--accent-color);
