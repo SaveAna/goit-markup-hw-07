@@ -81,6 +81,7 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .visually-hidden {
@@ -123,6 +124,7 @@ img {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 
 .logo--accent-color {
@@ -159,10 +161,6 @@ img {
 }
 
 /* geometry */
-
-.navigation {
-  margin-left: 93px;
-}
 
 .navigation__menu {
   display: flex;
@@ -230,10 +228,7 @@ img {
   max-width: 696px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.hero-section__btn {
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* ----------------modal-------------------- */
@@ -453,16 +448,11 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
+  margin-bottom: 30px;
 }
 
 .agree-link {
   color: var(--accent-color);
-}
-
-/* ---------------send-btn---------------- */
-
-.send-btn {
-  margin-top: 30px;
 }
 
 /* features-section */
@@ -472,7 +462,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .feature-description {
@@ -491,6 +481,7 @@ img {
   height: 120px;
   background-color: var(--light-bg-color);
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 /* -----------geometry----------------- */
@@ -502,10 +493,6 @@ img {
 
 .features-group .item {
   flex-basis: calc((100% - 3 * 30px) / 4);
-}
-
-.feature-description {
-  margin-top: 10px;
 }
 
 /* works-section */
@@ -539,7 +526,6 @@ img {
 .works .list {
   display: flex;
   gap: var(--card-gap);
-  margin-top: 50px;
 }
 
 /* teammates-section */
@@ -561,6 +547,7 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .teammate-position {
@@ -568,14 +555,13 @@ img {
   line-height: 1.19;
   color: var(--basic-text-color);
   letter-spacing: 0.03em;
-  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 /* ---------icons-------------------- */
 
 .social-links {
   display: flex;
-  margin-top: 16px;
   justify-content: center;
   gap: 10px;
   margin-left: auto;
@@ -613,7 +599,6 @@ img {
   display: flex;
   gap: var(--card-gap);
   flex-basis: calc((100% - 3 * var(--card-gap)) / 4);
-  margin-top: 50px;
 }
 
 .teammate-card .content {
@@ -635,7 +620,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: var(--card-gap);
-  margin-top: 50px;
 }
 
 /* list-item */
@@ -702,17 +686,23 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
+
+  margin-bottom: 20px;
 }
 
 /* ----------geometry--------------- */
-
-.page-footer .address-list {
-  margin-top: 20px;
-  width: 231px;
+.page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
-.page-footer .list .item:not(:first-child) {
-  margin-top: 9px;
+.page-footer .address-list {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.page-footer .list .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* -------------social-links------------------ */
@@ -723,13 +713,12 @@ img {
 }
 
 .page-footer-social {
-  margin-left: 70px;
+  margin-right: 93px;
 }
 
 .page-footer-social-links {
   display: flex;
   gap: 10px;
-  margin-top: 20px;
 }
 
 .page-footer-social-link {
@@ -762,7 +751,6 @@ img {
   display: flex;
   align-items: flex-end;
   gap: 12px;
-  margin-left: 93px;
 }
 
 .subscribe-form-input {
@@ -857,6 +845,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 /* projects-section */
@@ -865,6 +854,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .project-subtitle {
@@ -872,7 +862,6 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
-  margin-top: 4px;
 }
 
 /* ------------------------------ */
@@ -881,7 +870,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: var(--card-gap);
-  margin-top: 50px;
 }
 
 .project-card {
