@@ -601,16 +601,16 @@ img {
   padding-bottom: var(--card-gap);
 }
 
-/* customers-section */
+/* ========== clients section ========== */
 
-.customers {
+.clients {
   background-color: var(--primary-white-color);
 }
 
 /* ----------geometry & icons--------------------- */
 
 /* list */
-.clients {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -618,12 +618,12 @@ img {
 }
 
 /* list-item */
-.client-card {
+.clients__card {
   flex-basis: calc(100% - 5 * var(--card-gap) / 6);
 }
 
 /* item-link */
-.card-link {
+.clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -631,23 +631,19 @@ img {
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+  fill: currentColor;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* svg-in-link */
-.customer-icon {
-  fill: currentColor;
-}
-
-.card-link:hover,
-.card-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-/* ========== page-page-footer section ========== */
+/* ========== page-footer section ========== */
 
 .page-footer {
   background-color: var(--dark-bg-color);
