@@ -3,13 +3,13 @@
   --primary-white-color: #ffffff;
   --primary-black-color: #212121;
   --basic-text-color: #757575;
-  --page-footer-contacts-color: #ffffff99;
+  --footer-contacts-color: #ffffff99;
   --placeholder-color: #75757580;
 
   --active-btn-color: #188ce8;
 
   --icon-color: #afb1b8;
-  --page-footer-icon-color: #ffffff1a;
+  --footer-icon-color: #ffffff1a;
 
   --card-overlay-bg-color: #2196f3e5;
   --overlay-color: #2f303a66;
@@ -26,6 +26,9 @@
   --subscribe-border-color: #ffffff4d;
 
   --card-gap: 30px;
+
+  --transition-time: 250ms;
+  --transition-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========== basic rules ========== */
@@ -124,6 +127,9 @@ img {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+
+.logo--start {
   margin-right: 93px;
 }
 
@@ -131,7 +137,7 @@ img {
   color: var(--accent-color);
 }
 
-.site-nav__link {
+.header__link {
   display: inline-block;
   font-weight: 500;
   font-size: 14px;
@@ -140,8 +146,10 @@ img {
 
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color var(--transition-time) var(--transition-func);
+}
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.site-nav__link {
 }
 
 .site-nav__link--current {
@@ -171,23 +179,16 @@ img {
 
 .contacts__link {
   display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--basic-text-color);
-
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: center;
   gap: 10px;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-time) var(--transition-func);
 }
 
 /* geometry */
 
-.contacts {
+.contacts--flexed {
   display: flex;
   margin-left: auto;
   gap: 50px;
@@ -241,19 +242,19 @@ img {
   opacity: 1;
   z-index: 1;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition-time) var(--transition-func),
+    visibility var(--transition-time) var(--transition-func);
 }
 
 .hero__backdrop--hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition-time) var(--transition-func),
+    visibility var(--transition-time) var(--transition-func);
 }
 
-.close-btn {
+.close-button {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -266,11 +267,11 @@ img {
   border-radius: 50%;
   cursor: pointer;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-time) var(--transition-func);
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.close-button:hover,
+.close-button:focus {
   fill: var(--accent-color);
 }
 
@@ -292,7 +293,7 @@ img {
   padding: 40px;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-time) var(--transition-func);
 }
 
 .modal__title {
@@ -313,7 +314,7 @@ img {
   text-align: left;
   margin-bottom: 10px;
   fill: var(--primary-black-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-time) var(--transition-func);
 }
 
 .form__input {
@@ -332,8 +333,8 @@ img {
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-time) var(--transition-func),
+    outline-color var(--transition-time) var(--transition-func);
 }
 
 .form__label {
@@ -384,8 +385,8 @@ img {
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-time) var(--transition-func),
+    outline-color var(--transition-time) var(--transition-func);
 }
 
 .form__textarea:hover,
@@ -417,8 +418,8 @@ img {
   border: 2px solid var(--primary-black-color);
   border-radius: 2px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-time) var(--transition-func),
+    background-color var(--transition-time) var(--transition-func);
 }
 
 .checkbox:focus + .checkbox__icon {
@@ -463,7 +464,7 @@ img {
   margin-bottom: 10px;
 }
 
-.feature__description {
+.feature__label {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -575,11 +576,15 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  /* transition: background-color 2var(--transition-time) var(--transition-func); */
+}
+
+.team__social-networks {
   color: var(--icon-color);
   fill: currentColor;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-time) var(--transition-func),
+    background-color var(--transition-time) var(--transition-func);
 }
 
 .social-networks__link:hover,
@@ -633,8 +638,8 @@ img {
   border-radius: 4px;
   fill: currentColor;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-time) var(--transition-func),
+    border-color var(--transition-time) var(--transition-func);
 }
 
 .clients__link:hover,
@@ -643,35 +648,37 @@ img {
   border-color: var(--accent-color);
 }
 
-/* ========== page-footer section ========== */
+/* ========== footer section ========== */
 
-.page-footer {
+.footer {
   background-color: var(--dark-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.page-footer__logo {
+.footer__logo {
   color: var(--primary-white-color);
 }
 
-.page-footer .map-point,
-.page-footer .contact {
+.address {
+  width: 207px;
+}
+
+.address__link {
   display: inline-block;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
   letter-spacing: 0.03em;
+  color: var(--footer-contacts-color);
+  transition: color var(--transition-time) var(--transition-func);
+}
+
+.address__link--colored {
   color: var(--primary-white-color);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-footer .contact {
-  color: var(--page-footer-contacts-color);
-}
-
-.social-title {
+.social-networks__label {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -682,62 +689,30 @@ img {
 }
 
 /* ----------geometry--------------- */
-.page-footer__logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 }
 
-.page-footer .address-list {
-  /* width: 231px; */
-  /* margin-right: 70px; */
-}
-
-.page-footer .list .item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 /* -------------social-links------------------ */
 
-.page-footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
   gap: 93px;
 }
 
-.page-footer-social {
-  /* margin-right: 93px; */
-}
-
-.page-footer-social-links {
-  display: flex;
-  gap: 10px;
-}
-
-.page-footer-social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: var(--primary-white-color);
-  background-color: var(--page-footer-icon-color);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page-footer .social-icon {
-  width: 20px;
-  height: 20px;
+.footer__social-networks {
   fill: var(--primary-white-color);
+  background-color: var(--footer-icon-color);
+  transition: background-color var(--transition-time) var(--transition-func);
 }
 
-.page-footer-social-link:hover,
-.page-footer-social-link:focus {
-  background-color: var(--accent-color);
-}
-
-/* ------------page-footer form--------------- */
+/* ------------footer form--------------- */
 
 .subscribe-form {
   display: flex;
@@ -745,7 +720,7 @@ img {
   gap: 12px;
 }
 
-.subscribe-form-input {
+.subscribe-form__input {
   display: block;
 
   font-size: 16px;
@@ -764,22 +739,22 @@ img {
   border-radius: 4px;
   background-color: transparent;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-time) var(--transition-func);
 }
 
-.subscribe-form-input:hover,
-.subscribe-form-input:focus {
+.subscribe-form__input:hover,
+.subscribe-form__input:focus {
   border-color: var(--accent-color);
 }
 
-.subscribe-form-input::placeholder {
+.subscribe-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--page-footer-contacts-color);
+  color: var(--footer-contacts-color);
 }
 
-.subscribe-form-label {
+.subscribe-form__label {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -793,16 +768,15 @@ img {
 
 /* -------------subscrive-btn-------------- */
 
-.subscribe-btn {
+.subscribe-form__button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 25px;
-}
-
-.send-icon {
   fill: var(--primary-white-color);
 }
+
+/* ================================= */
 
 .filter-btn {
   font-family: inherit;
@@ -817,9 +791,9 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-time) var(--transition-func),
+    box-shadow var(--transition-time) var(--transition-func),
+    background-color var(--transition-time) var(--transition-func);
 }
 
 .filter-btn:hover,
@@ -867,12 +841,12 @@ img {
 .project-card {
   flex-basis: calc((100% - 2 * var(--card-gap)) / 3);
   background-color: var(--primary-white-color);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition-time) var(--transition-func);
 }
 
 .project-link {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition-time) var(--transition-func);
 }
 
 .text-content {
@@ -914,7 +888,7 @@ img {
   background-color: var(--card-overlay-bg-color);
 
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-time) var(--transition-func);
 }
 
 .project-card:focus .overlay,
@@ -944,7 +918,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-time) var(--transition-func);
 }
 
 .button--active:focus,
