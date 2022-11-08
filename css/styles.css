@@ -688,8 +688,8 @@ img {
 }
 
 .page-footer .address-list {
-  width: 231px;
-  margin-right: 70px;
+  /* width: 231px; */
+  /* margin-right: 70px; */
 }
 
 .page-footer .list .item:not(:last-child) {
@@ -701,10 +701,11 @@ img {
 .page-footer .container {
   display: flex;
   align-items: baseline;
+  gap: 93px;
 }
 
 .page-footer-social {
-  margin-right: 93px;
+  /* margin-right: 93px; */
 }
 
 .page-footer-social-links {
