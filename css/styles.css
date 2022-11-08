@@ -228,7 +228,7 @@ img {
   margin-bottom: 30px;
 }
 
-/* ----------------modal-------------------- */
+/* modal */
 
 .hero__backdrop {
   position: fixed;
@@ -306,7 +306,7 @@ img {
   margin-bottom: 12px;
 }
 
-/* -------------form----------------- */
+/* form */
 
 .form__field {
   position: relative;
@@ -351,7 +351,6 @@ img {
 
 .form__icon {
   position: absolute;
-  /* fill: var(--primary-black-color); */
   top: 50%;
   left: 12px;
   cursor: pointer;
@@ -402,7 +401,7 @@ img {
   color: var(--placeholder-color);
 }
 
-/* ----------checkbox---------------- */
+/* checkbox */
 
 .checkbox {
   -webkit-appearance: none;
@@ -454,7 +453,7 @@ img {
   color: var(--accent-color);
 }
 
-/* features-section */
+/* ========== features section ========== */
 
 .feature__title {
   font-size: 14px;
@@ -471,7 +470,20 @@ img {
   color: var(--basic-text-color);
 }
 
-/* --------------icons------------------ */
+/* geometry */
+
+.features__group {
+  display: flex;
+  gap: 30px;
+}
+
+.features__item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
+
+/* ========== */
+
+/* icons */
 
 .features__thumb {
   display: flex;
@@ -483,24 +495,17 @@ img {
   margin-bottom: 30px;
 }
 
-/* -----------geometry----------------- */
+/* ========== works section ========== */
 
-.features__group {
-  display: flex;
-  gap: 30px;
+.works {
+  padding-bottom: 94px;
 }
 
-.features__item {
-  flex-basis: calc((100% - 3 * 30px) / 4);
-}
-
-/* works-section */
-
-.img-box {
+.works__item {
   position: relative;
 }
 
-.text-label {
+.works__label {
   position: absolute;
 
   color: var(--primary-white-color);
@@ -518,11 +523,7 @@ img {
   bottom: 0;
 }
 
-.works {
-  padding-bottom: 94px;
-}
-
-.works .list {
+.works__list {
   display: flex;
   gap: var(--card-gap);
 }
