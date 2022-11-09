@@ -37,7 +37,7 @@
             <svg width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
-            info@devstudio.com
+            <span>info@devstudio.com</span>
           </a>
         </li>
         <li>
@@ -45,7 +45,7 @@
             <svg width="10" height="16">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
-            +1 212-772-4150
+            <span>+1 212-772-4150</span>
           </a>
         </li>
       </ul>
@@ -414,6 +414,13 @@
       </button>
       <b class="modal__title">Leave your information and we'll call you back</b>
       <form class="form js-speaker">
+        <!-- <label class="form__field" for="name">
+          <span class="form__label">Name</span>
+          <input type="text" class="form__input" name="name" id="name">
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#person"></use>
+          </svg>
+        </label> -->
         <div class="form__field">
           <label for="name" class="form__label">Name</label>
           <input type="text" class="form__input" name="name" id="name">
@@ -441,8 +448,8 @@
             placeholder="Enter the text"></textarea>
         </div>
         <label class="form__agreement">
-          <input class="form__checkbox" type="checkbox" name="agreement" value="agree">
-          <svg class="form__check-icon" width="16" height="15">
+          <input class="checkbox" type="checkbox" name="agreement" value="agree">
+          <svg class="checkbox__icon" width="16" height="15">
             <use class="use" href="./images/icons.svg#icon-check"></use>
           </svg>
           <span>
@@ -451,10 +458,11 @@
               Terms and Conditions </a>
           </span>
         </label>
-        <button class="button button--active" type="submit">Send</button>
+        <button class="button form__button button--active" type="submit">Send</button>
       </form>
     </div>
   </div>
+
   <script src="./js/modal.js"></script>
   <script src="./js/check.js"></script>
 </body>
