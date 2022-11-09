@@ -607,7 +607,7 @@ img {
   background-color: var(--primary-white-color);
 }
 
-/* ----------geometry & icons--------------------- */
+/* geometry & icons */
 
 /* list */
 .clients__list {
@@ -773,7 +773,7 @@ img {
 
 /* ========== portfolio section ========== */
 
-.filter-btn {
+.filter__button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -791,8 +791,8 @@ img {
     background-color var(--transition-time) var(--transition-func);
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.filter__button:hover,
+.filter__button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -811,14 +811,14 @@ img {
 
 /* projects-section */
 
-.project-title {
+.projects__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 
-.project-subtitle {
+.projects__subtitle {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -827,43 +827,43 @@ img {
 
 /* ------------------------------ */
 
-.project-group {
+.projects {
   display: flex;
   flex-wrap: wrap;
   gap: var(--card-gap);
 }
 
-.project-card {
+.projects__card {
   flex-basis: calc((100% - 2 * var(--card-gap)) / 3);
   background-color: var(--primary-white-color);
   transition: box-shadow var(--transition-time) var(--transition-func);
 }
 
-.project-link {
+.projects__link {
   display: block;
   transition: box-shadow var(--transition-time) var(--transition-func);
 }
 
-.text-content {
+.projects__description {
   padding: 20px 24px;
   border: 1px solid var(--project-border-color);
   border-top: transparent;
 }
 
-.project-card:hover,
-.project-card:focus,
-.project-link:hover,
-.project-link:focus {
+.projects__card:hover,
+.projects__card:focus,
+.projects__link:hover,
+.projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.visual-content {
+.projects__image {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-text {
+.overlay__content {
   position: absolute;
 
   font-size: 18px;
@@ -886,10 +886,10 @@ img {
   transition: transform var(--transition-time) var(--transition-func);
 }
 
-.project-card:focus .overlay,
-.project-card:hover .overlay,
-.project-link:hover .overlay,
-.project-link:focus .overlay {
+.projects__card:focus .overlay,
+.projects__card:hover .overlay,
+.projects__link:hover .overlay,
+.projects__link:focus .overlay {
   transform: translateY(-100%);
 }
 
