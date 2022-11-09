@@ -18,32 +18,33 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <a class="logo link" href="./index.html"><span class="logo--accent-color">Web</span>Studio</a>
+      <a class="logo link logo--start" href="./index.html"><span class="logo--accent-color">Web</span>Studio</a>
       <nav class="site-nav">
         <ul class="site-nav__menu list">
           <li>
-            <a class="link site-nav__link link--active" href="./index.html">Studio</a>
+            <a class="link header__link site-nav__link site-nav__link--current link--active" href="./index.html">Studio
+            </a>
           </li>
           <li>
-            <a class="link site-nav__link site-nav__link--current link--active" href="./portfolio.html">Portfolio</a>
+            <a class="link header__link site-nav__link link--active" href="./portfolio.html">Portfolio</a>
           </li>
           <li>
-            <a class="link site-nav__link link--active" href="#">Contacts</a>
+            <a class="link header__link site-nav__link link--active" href="#">Contacts</a>
           </li>
         </ul>
       </nav>
-      <ul class="contacts list">
+      <ul class="contacts contacts--flexed list">
         <li>
-          <a class="link contacts__link link--active" href="mailto:info@devstudio.com">
-            <svg class="contacts__icon" width="16" height="12">
+          <a class="link header__link contacts__link link--active" href="mailto:info@devstudio.com">
+            <svg width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
             info@devstudio.com
           </a>
         </li>
         <li>
-          <a class="link contacts__link link--active" href="tel:12127724150">
-            <svg class="contacts__icon" width="10" height="16">
+          <a class="link header__link contacts__link link--active" href="tel:12127724150">
+            <svg width="10" height="16">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
             +1 212-772-4150
@@ -230,66 +231,67 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="container">
-      <div class="address-box">
-        <a class="logo link page-footer__logo" href="./index.html"><span class="logo--accent-color">Web</span>Studio</a>
-        <address class="address-list">
-          <ul class="list">
-            <li class="item">
-              <a class="map-point link link--active-color" href="https://goo.gl/maps/ZH1uKgPYbjn2wYfD8" target="_blank"
-                rel="noopener noreferrer nofollow">695 Park Ave, NY 10065, USA</a>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div>
+        <a class="logo link footer__logo" href="./index.html"><span class="logo--accent-color">Web</span>Studio</a>
+        <address>
+          <ul class="list address">
+            <li class="address__item">
+              <a class="link address__link address__link--colored link--active"
+                href="https://goo.gl/maps/ZH1uKgPYbjn2wYfD8" target="_blank" rel="noopener noreferrer nofollow">695 Park
+                Ave, NY 10065, USA</a>
             </li>
-            <li class="item">
-              <a class="contact link link--active-color" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="address__item">
+              <a class="link address__link link--active" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="item">
-              <a class="contact link link--active-color" href="tel:12127724150">+1 212-772-4150</a>
+            <li class="address__item">
+              <a class="link address__link link--active" href="tel:12127724150">+1 212-772-4150</a>
             </li>
           </ul>
         </address>
       </div>
-      <div class="page-footer-social">
-        <h3 class="social-title">Find us on</h3>
-        <ul class="list page-footer-social-links">
-          <li class="page-footer-social-item">
-            <a class="page-footer-social-link link link--active-color" href="#" aria-label="instagram">
-              <svg class="social-icon">
+      <div>
+        <h3 class="social-networks__label">Find us on</h3>
+        <ul class="list social-networks">
+          <li>
+            <a class="social-networks__link link footer__social-networks link--active" href="#" aria-label="instagram">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="page-footer-social-item">
-            <a class="page-footer-social-link link link--active-color" href="#" aria-label="twitter">
-              <svg class="social-icon">
+          <li>
+            <a class="social-networks__link footer__social-networks link link--active" href="#" aria-label="twitter">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="page-footer-social-item">
-            <a class="page-footer-social-link link link--active-color" href="#" aria-label="facebook">
-              <svg class="social-icon">
+          <li>
+            <a class="social-networks__link footer__social-networks link link--active" href="#" aria-label="facebook">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="page-footer-social-item">
-            <a class="page-footer-social-link link link--active-color" href="#" aria-label="linkedin">
-              <svg class="social-icon">
+          <li>
+            <a class="social-networks__link link footer__social-networks link--active" href="#" aria-label="linkedin">
+              <svg width="20" height="20">
                 <use href="./images/icons.svg#linkedin"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <form class="subscribe-form js-speaker-form">
-        <div class="subscribe-form-field">
-          <label for="subscribe-email" class="subscribe-form-label">Subscribe to the newsletter</label>
-          <input type="email" class="subscribe-form-input" name="subscribe-email" id="subscribe-email"
+      <form class="subscribe-form js-speaker">
+        <div>
+          <label for="subscribe-email" class="subscribe-form__label">Subscribe to the newsletter</label>
+          <input type="email" class="subscribe-form__input" name="subscribe-email" id="subscribe-email"
             placeholder="E-mail" minlength="4">
         </div>
-        <button class="subscribe-btn button" type="submit">Subscribe
-          <svg class="send-icon" width="24" height="24">
+        <button class="subscribe-form__button button button--active" type="submit">Subscribe
+          <svg width="24" height="24">
             <use href="./images/icons.svg#icon-send"></use>
           </svg></button>
       </form>

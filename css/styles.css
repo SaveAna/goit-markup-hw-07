@@ -149,9 +149,6 @@ img {
   transition: color var(--transition-time) var(--transition-func);
 }
 
-.site-nav__link {
-}
-
 .site-nav__link--current {
   position: relative;
   color: var(--accent-color);
@@ -559,7 +556,7 @@ img {
   margin-bottom: 16px;
 }
 
-/* ---------icons-------------------- */
+/* icons */
 
 .social-networks {
   display: flex;
@@ -576,8 +573,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
-  /* transition: background-color 2var(--transition-time) var(--transition-func); */
 }
 
 .team__social-networks {
@@ -688,7 +683,7 @@ img {
   margin-bottom: 20px;
 }
 
-/* ----------geometry--------------- */
+/* geometry */
 .footer__logo {
   display: block;
   margin-bottom: 20px;
@@ -698,7 +693,7 @@ img {
   margin-bottom: 9px;
 }
 
-/* -------------social-links------------------ */
+/* social-links */
 
 .footer__container {
   display: flex;
@@ -712,7 +707,7 @@ img {
   transition: background-color var(--transition-time) var(--transition-func);
 }
 
-/* ------------footer form--------------- */
+/* footer form */
 
 .subscribe-form {
   display: flex;
@@ -766,7 +761,7 @@ img {
   margin-bottom: 20px;
 }
 
-/* -------------subscrive-btn-------------- */
+/* subscrive-btn */
 
 .subscribe-form__button {
   display: flex;
@@ -776,7 +771,7 @@ img {
   fill: var(--primary-white-color);
 }
 
-/* ================================= */
+/* ========== portfolio section ========== */
 
 .filter-btn {
   font-family: inherit;
