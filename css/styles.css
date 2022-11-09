@@ -87,7 +87,7 @@ img {
   margin-bottom: 50px;
 }
 
-.visually-hidden {
+.hidden-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -133,7 +133,7 @@ img {
   margin-right: 93px;
 }
 
-.logo--accent-color {
+.logo__accent {
   color: var(--accent-color);
 }
 
@@ -228,7 +228,7 @@ img {
 
 /* modal */
 
-.hero__backdrop {
+.backdrop {
   position: fixed;
   visibility: visible;
   top: 0;
@@ -243,7 +243,7 @@ img {
     visibility var(--transition-time) var(--transition-func);
 }
 
-.hero__backdrop--hidden {
+.backdrop--hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -272,7 +272,7 @@ img {
   fill: var(--accent-color);
 }
 
-.hero__backdrop--hidden .modal {
+.backdrop--hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
@@ -401,7 +401,7 @@ img {
 
 /* checkbox */
 
-.checkbox {
+.form__checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -409,7 +409,7 @@ img {
   outline-color: transparent;
 }
 
-.checkbox__icon {
+.form__check-icon {
   fill: var(--primary-white-color);
   background-color: transparent;
   border: 2px solid var(--primary-black-color);
@@ -419,19 +419,19 @@ img {
     background-color var(--transition-time) var(--transition-func);
 }
 
-.checkbox:focus + .checkbox__icon {
+.form__checkbox:focus + .form__check-icon {
   outline: 2px solid var(--primary-black-color);
   outline-offset: 2px;
 }
 
-.checkbox:checked + .checkbox__icon {
+.form__checkbox:checked + .form__check-icon {
   background-color: var(--accent-color);
   border-color: transparent;
   background-origin: content-box;
   outline-color: transparent;
 }
 
-.checkbox:hover + .checkbox__icon {
+.form__checkbox:hover + .form__check-icon {
   outline-color: transparent;
 }
 
@@ -453,7 +453,7 @@ img {
 
 /* ========== features section ========== */
 
-.feature__title {
+.features__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -461,7 +461,7 @@ img {
   margin-bottom: 10px;
 }
 
-.feature__label {
+.features__subtitle {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -673,7 +673,7 @@ img {
   color: var(--primary-white-color);
 }
 
-.social-networks__label {
+.footer__label {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
