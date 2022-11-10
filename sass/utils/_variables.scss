@@ -1,4 +1,4 @@
-$color: (
+$colors: (
 'accent': #2196f3,
 'primary-white': #ffffff,
 'primary-black': #212121,
@@ -7,29 +7,55 @@ $color: (
 'placeholder': #75757580,
 'active-btn': #188ce8,
 'icon': #afb1b8,
-'footer-icon': #ffffff1a,
-'card-overlay-bg': #2196f3e5,
+'footer-icon': #ffffff1a
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key)
+};
+
+$bg-colors: (
+'card-overlay': #2196f3e5,
 'overlay': #2f303a66,
-'label-bg': #2f303acc,
-'dark-bg': #2f303a,
-'light-bg': #f5f4fa,
-'modal-bg': #00000033,
-'hero-bg': #c4c4c4,
+'label': #2f303acc,
+'dark': #2f303a,
+'light': #f5f4fa,
+'modal': #00000033,
+'hero': #c4c4c4
+);
+
+@function getBg($key) {
+    @return map-get($bg-colors, $key)
+};
+
+$border-colors: (
 'header-border': #ececec,
 'project-border': #eeeeee,
 'form-border': #21212133,
 'subscribe-border': #ffffff4d
 );
 
-$font: (
+@function getBorder($key) {
+    @return map-get($border-colors, $key)
+};
+
+$fonts: (
 'main-font': 'Roboto', sans-serif,
 'secondary-font': 'Raleway', sans-serif
 );
+
+@function getFont($key) {
+    @return map-get($font, $key)
+};
 
 $transition: (
 'time': 250ms,
 'func': cubic-bezier(0.4, 0, 0.2, 1)
 );
+
+@function getAnim($key) {
+    @return map-get($transition, $key)
+};
 
 $sizes: (
 'contain-width': 1200px,
@@ -37,15 +63,7 @@ $sizes: (
 'grid-gap': 30px
 );
 
-@function getColor ($key) {
-    @return map-get($colors, $key)
-};
-
-@function getFont ($key) {
-    @return map-get($font, $key)
-};
-
-@function getSize ($key) {
+@function getSize($key) {
     @return map-get($size, $key)
 };
 
