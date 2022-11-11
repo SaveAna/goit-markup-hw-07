@@ -1,7 +1,7 @@
 @import './utils/variables';
 @import './base/universal';
-@import './utils/mixins';
 @import './utils/placeholders';
+@import './utils/mixins';
 @import './components/header';
 @import './components/logo';
 @import './components/site-nav';
@@ -11,5 +11,7 @@
 @import './components/features';
 @import './components/production';
 @import './components/team';
+@import './components/teammate';
 @import './components/social-networks';
 @import './components/clients';
+@import './components/footer';
