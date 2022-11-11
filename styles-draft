@@ -174,14 +174,14 @@ img {
 
 /* ========== */
 
-.contacts__link {
+/* .contacts__link {
   display: flex;
   color: var(--basic-text-color);
   align-items: center;
   gap: 10px;
 
   transition: color var(--transition-time) var(--transition-func);
-}
+} */
 
 /* geometry */
 
@@ -196,7 +196,7 @@ img {
 
 /* ========== hero section ========== */
 
-.hero {
+/* .hero {
   text-align: center;
   color: var(--primary-white-color);
   max-width: 1600px;
@@ -211,7 +211,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .hero__title {
   font-weight: 900;

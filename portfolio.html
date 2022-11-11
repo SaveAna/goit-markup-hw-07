@@ -17,37 +17,37 @@
 
 <body>
   <header class="header">
-    <div class="container header__container">
-      <a class="logo link logo--start" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-      <nav class="site-nav">
-        <ul class="site-nav__menu list">
+    <div class="header__container">
+      <a class="logo  logo--prepend" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+      <nav>
+        <ul class="site-nav">
           <li>
-            <a class="link header__link site-nav__link site-nav__link--current link--active" href="./index.html">Studio
+            <a class="header__link site-nav__item header__link--expanded" href="./index.html">Studio
             </a>
           </li>
           <li>
-            <a class="link header__link site-nav__link link--active" href="./portfolio.html">Portfolio</a>
+            <a class="header__link site-nav__item header__link--expanded site-nav__item--current" href="./portfolio.html">Portfolio</a>
           </li>
           <li>
-            <a class="link header__link site-nav__link link--active" href="#">Contacts</a>
+            <a class="header__link site-nav__item header__link--expanded" href="#">Contacts</a>
           </li>
         </ul>
       </nav>
-      <ul class="contacts contacts--flexed list">
+      <ul class="contacts contacts--append">
         <li>
-          <a class="link header__link contacts__link link--active" href="mailto:info@devstudio.com">
+          <a class="header__link contacts__item header__link--expanded" href="mailto:info@devstudio.com">
             <svg width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
-            info@devstudio.com
+            <span>info@devstudio.com</span>
           </a>
         </li>
         <li>
-          <a class="link header__link contacts__link link--active" href="tel:12127724150">
+          <a class="header__link contacts__item header__link--expanded" href="tel:12127724150">
             <svg width="10" height="16">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>
-            +1 212-772-4150
+            <span>+1 212-772-4150</span>
           </a>
         </li>
       </ul>

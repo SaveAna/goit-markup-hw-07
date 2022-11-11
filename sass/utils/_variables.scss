@@ -16,13 +16,13 @@ $colors: (
 };
 
 $bg-colors: (
-'card-overlay': #2196f3e5,
-'overlay': #2f303a66,
+'hero-overlay': #2f303a66,
+'hero': #c4c4c4,
 'work-label': #2f303acc,
 'dark': #2f303a,
 'light': #f5f4fa,
 'modal': #00000033,
-'hero': #c4c4c4,
+'card-overlay': #2196f3e5,
 'active-btn': #188ce8
 );
 
@@ -64,6 +64,7 @@ $transition: (
 };
 
 $sizes: (
+'hero-width': 1600px,
 'contain-width': 1200px,
 'contain-padding': 15px,
 'section-padding': 94px,
