@@ -1,0 +1,34 @@
+.clients {
+@include vertical-padding ();
+
+&__set {
+    @extend %list;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: getSize('grid-gap');
+}
+
+&__card {
+    flex-basis: calc(100% - 5 * getSize('grid-gap') / 6);
+}
+
+&__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 92px;
+        color: getColor('basic-icon');
+        border: 1px solid getColor('basic-icon');
+        border-radius: 4px;
+        fill: currentColor;
+
+        @include dual-transition (color, border-color);
+
+        &:hover,
+        &:focus {
+            color: getColor('accent');
+            border-color: getColor('accent');
+        }
+}
+}

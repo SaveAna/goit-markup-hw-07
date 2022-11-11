@@ -1,44 +1,45 @@
 .features {
-@include vertical-padding ();
+  @include vertical-padding ();
 
 .section-title {
-@extend %visually-hidden;
+  @extend %visually-hidden;
 }
+
 &__set {
-    @extend %list;
-    display: flex;
-    gap: 30px;
+  @extend %list;
+  display: flex;
+  gap: 30px;
 }
 
 &__item {
-    flex-basis: calc((100% - 3 * 30px) / 4);
-  }
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
 
 &__thumb {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 120px;
   background-color: getBgColor('light');
   border-radius: 4px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-
 &__title {
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-      }
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
 
 &__subtitle {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: getColor('basic');
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: getColor('basic');
 }   
+
 }
 
 

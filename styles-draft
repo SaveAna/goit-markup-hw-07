@@ -378,27 +378,27 @@ img {
 
 /* ========== clients section ========== */
 
-.clients {
+/* .clients {
   background-color: var(--primary-white-color);
-}
+} */
 
 /* geometry & icons */
 
 /* list */
-.clients__list {
+/* .clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: var(--card-gap);
-}
+} */
 
 /* list-item */
-.clients__card {
+/* .clients__card {
   flex-basis: calc(100% - 5 * var(--card-gap) / 6);
-}
+} */
 
 /* item-link */
-.clients__link {
+/* .clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,13 +410,13 @@ img {
 
   transition: color var(--transition-time) var(--transition-func),
     border-color var(--transition-time) var(--transition-func);
-}
+} */
 
-.clients__link:hover,
+/* .clients__link:hover,
 .clients__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-}
+} */
 
 /* ========== footer section ========== */
 
