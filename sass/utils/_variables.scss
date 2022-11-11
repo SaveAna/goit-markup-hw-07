@@ -1,70 +1,79 @@
+// ========== color palette ==========
+
 $colors: (
 'accent': #2196f3,
 'primary-white': #ffffff,
 'primary-black': #212121,
-'basic-text': #757575,
-'footer-contacts': #ffffff99,
+'basic': #757575,
+'foot-contacts': #ffffff99,
 'placeholder': #75757580,
-'active-btn': #188ce8,
 'icon': #afb1b8,
-'footer-icon': #ffffff1a
+'foot-icon': #ffffff1a
 );
 
-@function getColor($key) {
-    @return map-get($colors, $key)
+@function getColor($var) {
+    @return map-get($colors, $var);
 };
 
 $bg-colors: (
 'card-overlay': #2196f3e5,
 'overlay': #2f303a66,
-'label': #2f303acc,
+'work-label': #2f303acc,
 'dark': #2f303a,
 'light': #f5f4fa,
 'modal': #00000033,
-'hero': #c4c4c4
+'hero': #c4c4c4,
+'active-btn': #188ce8
 );
 
-@function getBg($key) {
-    @return map-get($bg-colors, $key)
+@function getBgColor($var) {
+    @return map-get($bg-colors, $var);
 };
 
 $border-colors: (
-'header-border': #ececec,
-'project-border': #eeeeee,
-'form-border': #21212133,
-'subscribe-border': #ffffff4d
+'header': #ececec,
+'project': #eeeeee,
+'form': #21212133,
+'subscribe': #ffffff4d
 );
 
-@function getBorder($key) {
-    @return map-get($border-colors, $key)
+@function getBorderColor($var) {
+    @return map-get($border-colors, $var);
 };
+
+// ========== fonts ==========
 
 $fonts: (
-'main-font': 'Roboto', sans-serif,
-'secondary-font': 'Raleway', sans-serif
+'main': ('Roboto', sans-serif),
+'secondary': ('Raleway', sans-serif)
 );
 
-@function getFont($key) {
-    @return map-get($font, $key)
+@function getFont($var) {
+    @return map-get($fonts, $var);
 };
+
+// ========== repetitive values ==========
 
 $transition: (
 'time': 250ms,
 'func': cubic-bezier(0.4, 0, 0.2, 1)
 );
 
-@function getAnim($key) {
-    @return map-get($transition, $key)
+@function getAnim($var) {
+    @return map-get($transition, $var);
 };
 
 $sizes: (
 'contain-width': 1200px,
 'contain-padding': 15px,
+'section-padding': 94px,
+'btn-width': 200px,
+'btn-height': 50px,
 'grid-gap': 30px
 );
 
-@function getSize($key) {
-    @return map-get($size, $key)
+@function getSize($var) {
+    @return map-get($sizes, $var);
 };
 
 // $main-width: 1200px;

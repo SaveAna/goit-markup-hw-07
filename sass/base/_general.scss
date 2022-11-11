@@ -1,0 +1,21 @@
+body {
+    font-family: getFont('main');
+    color: getColor('primary-black');
+    background-color: getColor('primary-white');
+  }
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+  }
+  
+img {
+    display: block;
+    max-width: 100%;
+  }
+
+.container {
+    @extend %container;
+}

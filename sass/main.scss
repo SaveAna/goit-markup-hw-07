@@ -1,3 +1,6 @@
 @import './utils/variables';
-@import './utils/placeholders';
+@import './base/general';
 @import './utils/mixins';
+@import './utils/placeholders';
+@import './components/header';
+@import './components/logo';

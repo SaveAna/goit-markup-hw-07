@@ -1,0 +1,24 @@
+.logo {
+    @extend %link;
+
+    font-family: getFont('secondary');
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    &--start {
+        margin-right: 93px;
+        }
+}
+
+.logo__accent {
+    @extend %accent;
+}
+
+.footer__logo {
+    color: getColor('primary-white');
+}
+
+
+
