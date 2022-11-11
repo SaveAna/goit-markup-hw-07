@@ -17,7 +17,7 @@
 }
 
 %link {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: getColor('primary-black');
   }
@@ -54,13 +54,6 @@
     overflow: hidden;
   };
 
-%section-title {
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 50px;
-  }
 
 
 

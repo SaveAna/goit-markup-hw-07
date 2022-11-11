@@ -11,13 +11,12 @@
         margin-right: 93px;
         }
         
-    &--indented {
+    &--separated {
         margin-bottom: 20px;
         }
-}
-
-.logo__accent {
-    @extend %accent;
+    &__accent {
+        @extend %accent;
+    }
 }
 
 .footer__logo {

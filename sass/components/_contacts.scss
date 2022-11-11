@@ -3,16 +3,15 @@
     display: flex;
     fill: currentColor;
     gap: 50px;
-
     &--append {
         margin-left: auto;
     }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    
+        color: getColor('basic');
+    }
 }
 
-.contacts__item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    color: getColor('basic');
-}

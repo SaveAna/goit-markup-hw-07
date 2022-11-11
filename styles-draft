@@ -228,37 +228,37 @@ img {
 
 /* ========== features section ========== */
 
-.features__title {
+/* .features__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-}
+} */
 
-.features__subtitle {
+/* .features__subtitle {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
-}
+} */
 
 /* geometry */
 
-.features__group {
+/* .features__group {
   display: flex;
   gap: 30px;
-}
+} */
 
-.features__item {
+/* .features__item {
   flex-basis: calc((100% - 3 * 30px) / 4);
-}
+} */
 
 /* ========== */
 
 /* icons */
 
-.features__thumb {
+/* .features__thumb {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -266,7 +266,7 @@ img {
   background-color: var(--light-bg-color);
   border-radius: 4px;
   margin-bottom: 30px;
-}
+} */
 
 /* ========== works section ========== */
 
