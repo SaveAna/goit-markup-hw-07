@@ -315,7 +315,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 } */
 
-.teammate__name {
+/* .teammate__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -329,28 +329,28 @@ img {
   color: var(--basic-text-color);
   letter-spacing: 0.03em;
   margin-bottom: 16px;
-}
+} */
 
 /* icons */
 
-.social-networks {
+/* .social-networks {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.social-networks__link {
+/* .social-networks__link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-}
+} */
 
-.team__social-networks {
+/* .team__social-networks {
   color: var(--icon-color);
   fill: currentColor;
   transition: color var(--transition-time) var(--transition-func),
@@ -361,7 +361,7 @@ img {
 .social-networks__link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-}
+} */
 
 /* ----------geometry--------------------- */
 
@@ -371,10 +371,10 @@ img {
   flex-basis: calc((100% - 3 * var(--card-gap)) / 4);
 } */
 
-.teammate__info {
+/* .teammate__info {
   padding-top: var(--card-gap);
   padding-bottom: var(--card-gap);
-}
+} */
 
 /* ========== clients section ========== */
 

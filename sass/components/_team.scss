@@ -31,4 +31,8 @@ background-color: getBgColor('light');
     letter-spacing: 0.03em;
     margin-bottom: 16px;
   }
+
+  &__info {
+    @include vertical-padding(getSize('grid-gap'),getSize('grid-gap'))
+}
 }

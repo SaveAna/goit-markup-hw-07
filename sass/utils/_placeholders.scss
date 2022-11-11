@@ -54,6 +54,14 @@
     overflow: hidden;
   };
 
+%icon-active {
+  &:hover,
+  &:focus {
+      color: getColor('primary-white');
+      background-color: getColor('accent');}
+
+}
+
 
 
 

@@ -4,11 +4,12 @@ $colors: (
 'accent': #2196f3,
 'primary-white': #ffffff,
 'primary-black': #212121,
+'foot-icon': #ffffff1a,
 'basic': #757575,
 'foot-contacts': #ffffff99,
 'placeholder': #75757580,
-'icon': #afb1b8,
-'foot-icon': #ffffff1a
+'soc-icon': #afb1b8
+
 );
 
 @function getColor($var) {

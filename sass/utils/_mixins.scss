@@ -7,3 +7,45 @@
     transition: $property getAnim('time') getAnim('func');
 }
 
+@mixin dual-transition ($a-property, $b-property) {
+    transition: $a-property getAnim('time') getAnim('func'),
+    $b-property getAnim('time') getAnim('func');
+}
+
+// ???how to do it humanly???
+@mixin several-transition ($a-property, $b-property, $b-var: getAnim('time') getAnim('func'),  $c-property, $c-var: getAnim('time') getAnim('func')) {
+    transition: $a-property getAnim('time') getAnim('func'),
+    $b-property $b-var, $c-property $c-var;
+}
+
+
+
+    // @mixin test ($count, $var) {
+    //     @if $count>0 {
+           
+    //     }   
+    //     }
+
+    // @mixin test ($count, $a-property, $anim: transition, $var:getAnim('time') getAnim('func')) {
+    //     @if $count>0 {
+
+    //     $anim: ($count)*($var);
+    //     }}
+        // transition: $a-property getAnim('time') getAnim('func'),
+        // $b-property $b-var, $c-property $c-var;
+
+        // @mixin test ($property) {
+        //     function someset 
+        //     var arr = [];
+
+//     $set: #{$property};
+// @each $property in $set {
+// transition: #{$property} getAnim('time') getAnim('func');}
+// }
+// $text_px: 8, 9, 10;
+
+// @each $var in $text_px {
+//     .t#{$var}px {
+//         font-size: #{$var}px;
+//     }
+// }

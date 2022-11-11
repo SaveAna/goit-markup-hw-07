@@ -35,13 +35,13 @@ img {
   color: #2196f3;
 }
 
-.team__set, .production__set, .features__set, .contacts, .site-nav {
+.social-networks, .team__set, .production__set, .features__set, .contacts, .site-nav {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.logo, .header__link {
+.social-networks__link, .logo, .header__link {
   display: inline-block;
   text-decoration: none;
   color: #212121;
@@ -75,6 +75,11 @@ img {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.social-networks .footer__social-networks:hover, .social-networks .team__social-networks:hover, .social-networks .footer__social-networks:focus, .social-networks .team__social-networks:focus {
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .header {
@@ -314,4 +319,48 @@ img {
   color: #757575;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+}
+.teammate__info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.social-networks--centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-networks__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-networks .team__social-networks {
+  color: #afb1b8;
+  fill: currentColor;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-networks .footer__social-networks {
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */
