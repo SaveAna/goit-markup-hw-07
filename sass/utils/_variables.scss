@@ -52,7 +52,7 @@ $fonts: (
     @return map-get($fonts, $var);
 };
 
-// ========== repetitive values ==========
+// ========== repetitive/main values ==========
 
 $transition: (
 'time': 250ms,

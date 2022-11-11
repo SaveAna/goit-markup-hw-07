@@ -270,15 +270,15 @@ img {
 
 /* ========== works section ========== */
 
-.works {
+/* .works {
   padding-bottom: 94px;
-}
+} */
 
-.works__item {
+/* .works__item {
   position: relative;
-}
+} */
 
-.works__label {
+/* .works__label {
   position: absolute;
 
   color: var(--primary-white-color);
@@ -294,7 +294,7 @@ img {
   height: 70px;
   background-color: var(--label-bg-color);
   bottom: 0;
-}
+} */
 
 .works__list {
   display: flex;
