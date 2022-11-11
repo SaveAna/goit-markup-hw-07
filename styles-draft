@@ -296,24 +296,24 @@ img {
   bottom: 0;
 } */
 
-.works__list {
+/* .works__list {
   display: flex;
   gap: var(--card-gap);
-}
+} */
 
 /* ========== team section ========== */
 
-.team {
+/* .team {
   background-color: var(--light-bg-color);
-}
+} */
 
-.teammate {
+/* .teammate {
   text-align: center;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
+} */
 
 .teammate__name {
   font-weight: 500;
@@ -365,11 +365,11 @@ img {
 
 /* ----------geometry--------------------- */
 
-.team__cards {
+/* .team__cards {
   display: flex;
   gap: var(--card-gap);
   flex-basis: calc((100% - 3 * var(--card-gap)) / 4);
-}
+} */
 
 .teammate__info {
   padding-top: var(--card-gap);

@@ -1,5 +1,5 @@
 .hero {
-    @include paddings(200px, 200px);
+    @include vertical-padding (200px, 200px);
     text-align: center;
     color: getColor('primary-white');
     max-width: getSize('hero-width');

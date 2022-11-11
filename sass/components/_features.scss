@@ -1,5 +1,5 @@
 .features {
-@include paddings();
+@include vertical-padding ();
 
 .section-title {
 @extend %visually-hidden;

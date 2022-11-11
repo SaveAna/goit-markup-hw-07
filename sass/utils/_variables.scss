@@ -41,6 +41,33 @@ $border-colors: (
     @return map-get($border-colors, $var);
 };
 
+$shadows: (
+'button': 
+(0px 4px 4px rgba(0, 0, 0, 0.15)),
+'modal': 
+(0px 1px 3px rgba(0, 0, 0, 0.12), 
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2)),
+'team-card': 
+(0px 1px 3px rgba(0, 0, 0, 0.12), 
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2)),
+'subscription': 
+(0px 4px 4px rgba(0, 0, 0, 0.15)),
+'filter-btn': 
+(0px 3px 1px rgba(0, 0, 0, 0.1), 
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12)),
+'portfolio': 
+(0px 1px 1px rgba(0, 0, 0, 0.12), 
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16)),
+);
+
+@function getShadow($var) {
+    @return map-get($shadows, $var);
+};
+
 // ========== fonts ==========
 
 $fonts: (
@@ -76,8 +103,3 @@ $sizes: (
 @function getSize($var) {
     @return map-get($sizes, $var);
 };
-
-// $main-width: 1200px;
-// $main-padding: 15px;
-
-// $card-gap: 30px;

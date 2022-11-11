@@ -1,5 +1,5 @@
 .production {
-@include paddings (0);
+@include vertical-padding (0);
 
 &__set {
 @extend %list;
