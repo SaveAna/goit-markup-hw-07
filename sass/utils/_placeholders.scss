@@ -31,25 +31,6 @@
     }
 }
 
-%button {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-  
-    letter-spacing: 0.06em;
-    color: getColor('primary-white');
-    border-color: transparent;
-  
-    width: getSize('btn-width');
-    height: getSize('btn-height');
-  
-    background: getColor('accent');
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
   %btn-active {
     @include base-transition (background-color);
 

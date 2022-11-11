@@ -213,7 +213,7 @@ img {
   background-position: center;
 } */
 
-.hero__title {
+/* .hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -224,7 +224,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-}
+} */
 
 /* ========== features section ========== */
 
