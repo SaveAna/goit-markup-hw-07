@@ -1,0 +1,18 @@
+.contacts {
+    @extend %list;
+    display: flex;
+    fill: currentColor;
+    gap: 50px;
+
+    &--append {
+        margin-left: auto;
+    }
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: getColor('basic');
+}

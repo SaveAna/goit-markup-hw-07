@@ -154,7 +154,7 @@ img {
   color: var(--accent-color);
 } */
 
-.site-nav__link--current::after {
+/* .site-nav__link--current::after {
   content: '';
   position: absolute;
   display: block;
@@ -163,7 +163,7 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-}
+} */
 
 /* geometry */
 
@@ -185,12 +185,12 @@ img {
 
 /* geometry */
 
-.contacts--flexed {
+/* .contacts--flexed {
   display: flex;
   margin-left: auto;
   gap: 50px;
   fill: currentColor;
-}
+} */
 
 /* ========== */
 
