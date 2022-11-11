@@ -1,21 +1,25 @@
 .header {
-    border-bottom: 1px solid getBorderColor('header');
-    
+    border-bottom: 1px solid getBorderColor('header'); 
 }
 
 .header__container {
     @extend %container;
+
     display: flex;
     align-items: center;
 }
 
 .header__link {
+    @extend %link;
+    @extend %link-active;
+
     display: inline-block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     
-    @include paddings(32px, 32px);
-    transition: color var(--transition-time) var(--transition-func);
-  }
+    &--expanded {
+        @include paddings(32px, 32px);
+    }
+}
