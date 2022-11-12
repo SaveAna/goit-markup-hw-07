@@ -9,8 +9,6 @@ $colors: (
 'foot-contacts': #ffffff99,
 'placeholder': #75757580,
 'basic-icon': #afb1b8,
-
-
 );
 
 @function getColor($var) {
@@ -37,7 +35,7 @@ $border-colors: (
 'header': #ececec,
 'project': #eeeeee,
 'form': #21212133,
-'subscribe': #ffffff4d
+'subscription': #ffffff4d
 );
 
 @function getBorderColor($var) {

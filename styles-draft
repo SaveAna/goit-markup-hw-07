@@ -476,21 +476,21 @@ img {
   gap: 93px;
 } */
 
-.footer__social-networks {
+/* .footer__social-networks {
   fill: var(--primary-white-color);
   background-color: var(--footer-icon-color);
   transition: background-color var(--transition-time) var(--transition-func);
-}
+} */
 
 /* footer form */
 
-.subscribe-form {
+/* .subscribe-form {
   display: flex;
   align-items: flex-end;
   gap: 12px;
-}
+} */
 
-.subscribe-form__input {
+/* .subscribe-form__input {
   display: block;
 
   font-size: 16px;
@@ -510,21 +510,21 @@ img {
   background-color: transparent;
 
   transition: border-color var(--transition-time) var(--transition-func);
-}
+} */
 
-.subscribe-form__input:hover,
+/* .subscribe-form__input:hover,
 .subscribe-form__input:focus {
   border-color: var(--accent-color);
-}
+} */
 
-.subscribe-form__input::placeholder {
+/* .subscribe-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
-}
+} */
 
-.subscribe-form__label {
+/* .subscribe-form__label {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -534,17 +534,17 @@ img {
   color: var(--primary-white-color);
 
   margin-bottom: 20px;
-}
+} */
 
 /* subscrive-btn */
 
-.subscribe-form__button {
+/* .subscribe-form__button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 25px;
   fill: var(--primary-white-color);
-}
+} */
 
 /* ========== portfolio section ========== */
 

@@ -17,3 +17,11 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+.subscribe-form__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+     fill: getColor('primary-white');
+}
