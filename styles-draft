@@ -770,7 +770,7 @@ img {
   transition: transform var(--transition-time) var(--transition-func);
 } */
 
-.modal__title {
+/* .modal__title {
   display: block;
   font-weight: 700;
   font-size: 20px;
@@ -779,7 +779,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-black-color);
   margin-bottom: 12px;
-}
+} */
 
 /* form */
 
@@ -922,11 +922,11 @@ img {
   color: var(--accent-color);
 }
 
-.form__button {
+/* .form__button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 
 
