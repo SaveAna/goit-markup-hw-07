@@ -21,7 +21,6 @@
 }
 
 .address {
-    @extend %list;
     width: 207px;
 
     &__item:not(:last-child) {
@@ -29,7 +28,6 @@
     }
     
     &__link {
-        @extend %link;
         @extend %link-active;
         font-size: 14px;
     line-height: 1.71;

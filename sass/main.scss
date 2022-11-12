@@ -1,5 +1,5 @@
 @import './utils/variables';
-@import './base/universal';
+@import './base/base';
 @import './utils/mixins';
 @import './utils/placeholders';
 @import './components/header';
@@ -10,7 +10,7 @@
 @import './components/button';
 @import './components/features';
 @import './components/production';
-@import './components/team';
+@import './components/team-section';
 @import './components/teammate';
 @import './components/social-networks';
 @import './components/clients';

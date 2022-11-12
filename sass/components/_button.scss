@@ -1,6 +1,5 @@
 .button {
     @extend %btn-active;
-    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -15,7 +14,6 @@
     background: getColor('accent');
     box-shadow: getShadow('button');
     border-radius: 4px;
-    cursor: pointer;
 }
 
 .subscribe-form__button {

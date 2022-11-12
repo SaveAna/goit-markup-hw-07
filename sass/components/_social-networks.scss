@@ -1,5 +1,4 @@
 .social-networks {
-    @extend %list;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -9,7 +8,6 @@
         margin-right: auto; }
 
     &__link {
-        @extend %link;
         display: flex;
         align-items: center;
         justify-content: center;

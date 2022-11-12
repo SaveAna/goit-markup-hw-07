@@ -2,7 +2,6 @@
 @include vertical-padding (0);
 
 &__set {
-@extend %list;
 display: flex;
   gap: getSize('grid-gap');
 }

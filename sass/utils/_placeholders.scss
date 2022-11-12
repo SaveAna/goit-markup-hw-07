@@ -24,17 +24,17 @@
     color: getColor('accent');
 } 
 
-%list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+// %list {
+//     padding: 0;
+//     margin: 0;
+//     list-style: none;
+// }
 
-%link {
-    display: inline-block;
-    text-decoration: none;
-    color: getColor('primary-black');
-  }
+// %link {
+//     display: inline-block;
+//     text-decoration: none;
+//     color: getColor('primary-black');
+//   }
 
   %link-active {
     @include base-transition (color);

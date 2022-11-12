@@ -7,7 +7,6 @@
         align-items: center;
     }
     &__link {
-        @extend %link;
         @extend %link-active;
     
         font-weight: 500;

@@ -3,7 +3,6 @@
 background-color: getBgColor('light');
 
 &__set {
-    @extend %list;
     display: flex;
     gap: getSize('grid-gap');
 }

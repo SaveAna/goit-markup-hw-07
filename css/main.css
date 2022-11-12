@@ -16,6 +16,23 @@ img {
   max-width: 100%;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #212121;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.16;
@@ -47,18 +64,6 @@ img {
 
 .logo__accent {
   color: #2196f3;
-}
-
-.address, .clients__set, .social-networks, .team__set, .production__set, .features__set, .contacts, .site-nav {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.address__link, .social-networks__link, .logo, .header__link {
-  display: inline-block;
-  text-decoration: none;
-  color: #212121;
 }
 
 .address__link, .header__link {
@@ -189,7 +194,6 @@ img {
 }
 
 .button {
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -202,7 +206,6 @@ img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .subscribe-form__button {
