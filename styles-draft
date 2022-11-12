@@ -705,7 +705,7 @@ img {
 
 /* modal */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   visibility: visible;
   top: 0;
@@ -718,15 +718,15 @@ img {
 
   transition: opacity var(--transition-time) var(--transition-func),
     visibility var(--transition-time) var(--transition-func);
-}
+} */
 
-.backdrop--hidden {
+/* .backdrop--hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-time) var(--transition-func),
     visibility var(--transition-time) var(--transition-func);
-}
+} */
 
 .close-button {
   position: absolute;
