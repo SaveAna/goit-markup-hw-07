@@ -19,15 +19,15 @@
     
     .team__social-networks {
         @extend %icon-active;
-        color: getColor('basic-icon');
+        color: getColor(basic-icon);
         fill: currentColor;
         @include dual-transition (color, background-color);
     }
     
     .footer__social-networks {
         @extend %icon-active;
-        fill: getColor('primary-white');
-        background-color: getBgColor('foot-icon');
+        fill: getColor(primary-white);
+        background-color: getBgColor(foot-icon);
         @include base-transition (background-color);
       }
     

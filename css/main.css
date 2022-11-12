@@ -67,16 +67,16 @@ button {
 }
 
 .address__link, .header__link {
-  -webkit-transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address__link:focus, .header__link:focus, .address__link:hover, .header__link:hover {
   color: #2196f3;
 }
 
 .button {
-  -webkit-transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:focus, .button:hover {
   background-color: #188ce8;
@@ -378,15 +378,15 @@ button {
 .team__social-networks {
   color: #afb1b8;
   fill: currentColor;
-  -webkit-transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__social-networks {
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1019607843);
-  -webkit-transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -424,8 +424,8 @@ button {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: currentColor;
-  -webkit-transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover, .clients__link:focus {
   color: #2196f3;
@@ -507,8 +507,8 @@ button {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  -webkit-transition: border-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-form__input::-webkit-input-placeholder {
   font-size: 16px;
@@ -557,15 +557,15 @@ button {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 1;
-  -webkit-transition: opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop--hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop--hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.9);
@@ -585,10 +585,10 @@ button {
   padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 2250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__title {
   display: block;
@@ -611,9 +611,144 @@ button {
   background: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 50%;
-  -webkit-transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button:hover, .close-button:focus {
   fill: #2196f3;
+}
+
+.form__field {
+  position: relative;
+  fill: #212121;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input {
+  display: block;
+  font: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  width: 100%;
+  margin: 0;
+  padding: 11px 12px 11px 42px;
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input:focus-visible {
+  outline: none;
+}
+.form__label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  cursor: pointer;
+}
+.form__textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  padding: 12px 16px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  resize: none;
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__textarea:focus-visible {
+  outline: none;
+}
+.form__textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5019607843);
+}
+.form__textarea::-moz-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5019607843);
+}
+.form__textarea:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5019607843);
+}
+.form__textarea::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5019607843);
+}
+.form__textarea::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5019607843);
+}
+.form__checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+.form__check-icon {
+  fill: #ffffff;
+  background-color: transparent;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__check-icon .checkbox:focus {
+  outline: 2px solid #212121;
+  outline-offset: 2px;
+}
+.form__check-icon .checkbox:checked {
+  background-color: #2196f3;
+  border-color: transparent;
+  background-origin: content-box;
+  outline-color: transparent;
+}
+.form__agreement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 30px;
+}
+.form__agree-link {
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */

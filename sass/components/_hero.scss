@@ -1,14 +1,14 @@
 .hero {
     @include vertical-padding (200px, 200px);
     text-align: center;
-    color: getColor('primary-white');
-    max-width: getSize('hero-width');
+    color: getColor(primary-white);
+    max-width: getSize(hero-width);
     margin-left: auto;
     margin-right: auto;
 
-    background-image: linear-gradient(to right, getBgColor('hero-overlay'), getBgColor('hero-overlay')),
+    background-image: linear-gradient(to right, getBgColor(hero-overlay), getBgColor(hero-overlay)),
     url('../images/bg-img.jpg');
-    background-color: getBgColor('hero');
+    background-color: getBgColor(hero);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -5,8 +5,8 @@
   
     height: 581px;
     width: 528px;
-    background-color: getColor('primary-white');
-    box-shadow: getShadow('modal');
+    background-color: getColor(primary-white);
+    box-shadow: getShadow(modal);
     border-radius: 4px;
     padding: 40px;
   
@@ -20,7 +20,7 @@
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: getColor('primary-black');
+  color: getColor(primary-black);
   margin-bottom: 12px;
 }
 

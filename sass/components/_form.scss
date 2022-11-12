@@ -1,0 +1,117 @@
+.form {
+  &__field {
+    position: relative;
+    fill: getColor(primary-black);
+    @include base-transition(fill);
+  }
+
+  &__input {
+    display: block;
+
+    font: inherit;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    width: 100%;
+    margin: 0;
+    padding: 11px 12px 11px 42px;
+    cursor: pointer;
+
+    border: 1px solid getBorderColor(form);
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+    @include base-transition(border-color);
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: getColor(basic);
+    margin-bottom: 4px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    cursor: pointer;
+  }
+
+  &__textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    padding: 12px 16px;
+
+    font: inherit;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    resize: none;
+    cursor: pointer;
+
+    border: 1px solid getBorderColor(form);
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    @include base-transition(border-color);
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__textarea::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: getColor(placeholder);
+  }
+
+  &__checkbox {
+    appearance: none;
+    position: absolute;
+    // outline-color: transparent;
+  }
+
+  &__check-icon {
+    fill: getColor(primary-white);
+    background-color: transparent;
+    border: 2px solid getColor(primary-black);
+    border-radius: 2px;
+    @include dual-transition(border-color, background-color);
+    .checkbox:focus {
+      outline: 2px solid getColor(primary-black);
+      outline-offset: 2px;
+    }
+    .checkbox:checked {
+      background-color: getColor(accent);
+      border-color: transparent;
+      background-origin: content-box;
+      outline-color: transparent;
+    }
+  }
+
+  &__agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: getColor(basic);
+    margin-bottom: 30px;
+  }
+
+  &__agree-link {
+    color: getColor(accent);
+  }
+}

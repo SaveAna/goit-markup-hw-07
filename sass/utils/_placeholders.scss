@@ -10,49 +10,42 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-};
-
-%container {
-    width: getSize('contain-width');
-    padding-left: getSize('contain-padding');
-    padding-right: getSize('contain-padding');
-    
-    margin: 0 auto;
-  }
-
-%accent {
-    color: getColor('accent');
-} 
-
-  %link-active {
-    @include base-transition (color);
-    
-    &:focus, 
-    &:hover {
-        color: getColor('accent');
-    }
 }
 
-  %btn-active {
-    @include base-transition (background-color);
+%container {
+  width: getSize(contain-width);
+  padding-left: getSize(contain-padding);
+  padding-right: getSize(contain-padding);
 
-    &:focus,
-    &:hover {
-        background-color: getBgColor('active-btn');
-    }
+  margin: 0 auto;
+}
+
+%accent {
+  color: getColor(accent);
+}
+
+%link-active {
+  @include base-transition(color);
+
+  &:focus,
+  &:hover {
+    color: getColor(accent);
+  }
+}
+
+%btn-active {
+  @include base-transition(background-color);
+
+  &:focus,
+  &:hover {
+    background-color: getBgColor(active-btn);
+  }
 }
 
 %icon-active {
   &:hover,
   &:focus {
-      color: getColor('primary-white');
-      background-color: getColor('accent');}
+    color: getColor(primary-white);
+    background-color: getColor(accent);
+  }
 }
-
-
-
-
-
-
-
-

@@ -19,8 +19,8 @@ display: flex;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: getColor('primary-white');
-  background-color: getBgColor('work-label');
+  color: getColor(primary-white);
+  background-color: getBgColor(work-label);
 
   display: flex;
   justify-content: center;
