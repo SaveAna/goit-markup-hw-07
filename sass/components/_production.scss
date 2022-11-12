@@ -3,12 +3,12 @@
 
 &__set {
 display: flex;
-  gap: getSize('grid-gap');
+  gap: getSize(grid-gap);
 }
 
 &__item {
     position: relative;
-    flex-basis: calc(( 100% - 2 * getSize('grid-gap')) / 3);
+    flex-basis: calc(( 100% - 2 * getSize(grid-gap)) / 3);
 }
 
 &__label {

@@ -1,5 +1,5 @@
 .logo {
-    font-family: getFont('secondary');
+    font-family: getFont(secondary);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -18,7 +18,7 @@
 }
 
 .footer__logo {
-    color: getColor('primary-white');
+    color: getColor(primary-white);
 }
 
 

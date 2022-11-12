@@ -728,7 +728,7 @@ img {
     visibility var(--transition-time) var(--transition-func);
 } */
 
-.close-button {
+/* .close-button {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -742,18 +742,18 @@ img {
   cursor: pointer;
 
   transition: fill var(--transition-time) var(--transition-func);
-}
+} */
 
-.close-button:hover,
+/* .close-button:hover,
 .close-button:focus {
   fill: var(--accent-color);
-}
+} */
 
-.backdrop--hidden .modal {
+/* .backdrop--hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
-}
+} */
 
-.modal {
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -768,7 +768,7 @@ img {
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-time) var(--transition-func);
-}
+} */
 
 .modal__title {
   display: block;

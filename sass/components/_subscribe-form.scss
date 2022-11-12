@@ -21,7 +21,7 @@
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.03em;
-        color: var(--primary-white-color);
+        color: getColor('primary-white');
       
         width: 358px;
         height: 50px;
@@ -48,5 +48,7 @@
         &:focus-visible {
         outline: none;
         }
+        
+        }
     }
-}
+       

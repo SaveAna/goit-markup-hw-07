@@ -8,7 +8,7 @@ $colors: (
 'basic': #757575,
 'foot-contacts': #ffffff99,
 'placeholder': #75757580,
-'basic-icon': #afb1b8,
+'basic-icon': #afb1b8
 );
 
 @function getColor($var) {
@@ -16,15 +16,16 @@ $colors: (
 };
 
 $bg-colors: (
-'hero-overlay': #2f303a66,
-'hero': #c4c4c4,
-'work-label': #2f303acc,
 'dark': #2f303a,
 'light': #f5f4fa,
+'active-btn': #188ce8,
+'hero': #c4c4c4,
+'hero-overlay': #2f303a66,
+'work-label': #2f303acc,
 'foot-icon': #ffffff1a,
 'backdrop': #00000033,
-'card-overlay': #2196f3e5,
-'active-btn': #188ce8
+'card-overlay': #2196f3e5
+
 );
 
 @function getBgColor($var) {
@@ -34,7 +35,7 @@ $bg-colors: (
 $border-colors: (
 'header': #ececec,
 'project': #eeeeee,
-'form': #21212133,
+'close-btn': #21212133,
 'subscription': #ffffff4d
 );
 
@@ -62,7 +63,7 @@ $shadows: (
 'portfolio': 
 (0px 1px 1px rgba(0, 0, 0, 0.12), 
 0px 4px 4px rgba(0, 0, 0, 0.06),
-1px 4px 6px rgba(0, 0, 0, 0.16)),
+1px 4px 6px rgba(0, 0, 0, 0.16))
 );
 
 @function getShadow($var) {
@@ -83,7 +84,7 @@ $fonts: (
 // ========== repetitive/main values ==========
 
 $transition: (
-'time': 250ms,
+'time': 2250ms,
 'func': cubic-bezier(0.4, 0, 0.2, 1)
 );
 

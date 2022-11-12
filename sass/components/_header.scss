@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid getBorderColor('header'); 
+    border-bottom: 1px solid getBorderColor(header); 
     &__container {
         @extend %container;
     
