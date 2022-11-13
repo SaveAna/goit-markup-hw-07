@@ -1,5 +1,5 @@
 .teammate {
-    text-align: center;
+  text-align: center;
   background-color: getColor(primary-white);
   box-shadow: getShadow(team-card);
   border-radius: 0px 0px 4px 4px;
@@ -22,6 +22,6 @@
   }
 
   &__info {
-    @include vertical-padding(getSize(grid-gap),getSize(grid-gap))
-}
+    @include vertical-padding(30px, 30px);
+  }
 }

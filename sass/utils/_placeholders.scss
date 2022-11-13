@@ -49,3 +49,8 @@
     background-color: getColor(accent);
   }
 }
+
+%form-focus {
+  border-color: getColor(accent);
+  fill: getColor(accent);
+}

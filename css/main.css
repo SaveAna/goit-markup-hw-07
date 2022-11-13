@@ -41,7 +41,7 @@ button {
   margin-bottom: 50px;
 }
 
-.features .section-title {
+.section-title--hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -85,6 +85,11 @@ button {
 .footer__social-networks:hover, .team__social-networks:hover, .footer__social-networks:focus, .team__social-networks:focus {
   color: #ffffff;
   background-color: #2196f3;
+}
+
+.form__field:hover, .form__field:hover .form__input, .form__input:focus, .form__input:focus + .form__icon, .form__textarea:hover, .form__textarea:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
 }
 
 .header {
@@ -374,6 +379,9 @@ button {
   height: 44px;
   border-radius: 50%;
 }
+.social-networks__link:focus-visible {
+  outline: none;
+}
 
 .team__social-networks {
   color: #afb1b8;
@@ -430,6 +438,9 @@ button {
 .clients__link:hover, .clients__link:focus {
   color: #2196f3;
   border-color: #2196f3;
+}
+.clients__link:focus-visible {
+  outline: none;
 }
 
 .footer {
@@ -728,7 +739,6 @@ button {
 .form__agree-link {
   color: #2196f3;
 }
-
 .checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;

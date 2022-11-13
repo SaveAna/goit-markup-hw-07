@@ -9,6 +9,7 @@
     border-radius: 2px;
     @include dual-transition(border-color, background-color);
   }
+
   &:focus-visible {
     outline: none;
   }

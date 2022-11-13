@@ -23,9 +23,10 @@
     margin-bottom: 10px;
 
     @include base-transition(border-color);
-    &:focus-visible {
-      outline: none;
-    }
+  }
+
+  &__input:focus-visible {
+    outline: none;
   }
 
   &__label {
@@ -63,9 +64,10 @@
     margin-bottom: 20px;
 
     @include base-transition(border-color);
-    &:focus-visible {
-      outline: none;
-    }
+  }
+
+  &__textarea:focus-visible {
+    outline: none;
   }
 
   &__textarea::placeholder {
@@ -89,5 +91,14 @@
 
   &__agree-link {
     color: getColor(accent);
+  }
+
+  &__field:hover,
+  &__field:hover &__input,
+  &__input:focus,
+  &__input:focus + &__icon,
+  &__textarea:hover,
+  &__textarea:focus {
+    @extend %form-focus;
   }
 }
