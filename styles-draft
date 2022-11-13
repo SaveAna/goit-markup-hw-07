@@ -548,7 +548,7 @@ img {
 
 /* ========== portfolio section ========== */
 
-.filter__button {
+/* .filter__button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -564,7 +564,7 @@ img {
   transition: color var(--transition-time) var(--transition-func),
     box-shadow var(--transition-time) var(--transition-func),
     background-color var(--transition-time) var(--transition-func);
-}
+} */
 
 .filter__button:hover,
 .filter__button:focus {
@@ -577,12 +577,12 @@ img {
 
 /* ------------------------------- */
 
-.filter {
+/* .filter {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
-}
+} */
 
 /* projects-section */
 

@@ -1,0 +1,28 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+
+  &__button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    color: getColor(primary-black);
+    background-color: getBgColor(light);
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    @include filter-transition(color, box-shadow, background-color);
+  }
+
+  &__button:hover,
+  &__button:focus {
+    color: getColor(primary-white);
+    background-color: getColor(accent);
+    box-shadow: getShadow(filter-btn);
+  }
+}

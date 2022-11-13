@@ -1,7 +1,7 @@
 @import './utils/variables';
-@import './base/base';
 @import './utils/mixins';
 @import './utils/placeholders';
+@import './base/base';
 @import './components/header';
 @import './components/logo';
 @import './components/site-nav';
@@ -21,3 +21,4 @@
 @import './components/close-button';
 @import './components/form';
 @import './components/checkbox';
+@import './components/filter';
