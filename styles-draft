@@ -566,14 +566,14 @@ img {
     background-color var(--transition-time) var(--transition-func);
 } */
 
-.filter__button:hover,
+/* .filter__button:hover,
 .filter__button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
-}
+} */
 
 /* ------------------------------- */
 
@@ -586,46 +586,46 @@ img {
 
 /* projects-section */
 
-.projects__title {
+/* .projects__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-}
+} */
 
-.projects__subtitle {
+/* .projects__subtitle {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
-}
+} */
 
 /* ------------------------------ */
 
-.portfolio {
+/* .portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: var(--card-gap);
-}
+} */
 
-.portfolio__card {
+/* .portfolio__card {
   flex-basis: calc((100% - 2 * var(--card-gap)) / 3);
   background-color: var(--primary-white-color);
   transition: box-shadow var(--transition-time) var(--transition-func);
-}
+} */
 
-.project {
+/* .project {
   display: block;
   transition: box-shadow var(--transition-time) var(--transition-func);
-}
+} */
 
-.projects__description {
+/* .projects__description {
   padding: 20px 24px;
   border: 1px solid var(--project-border-color);
   border-top: transparent;
-}
+} */
 
-.portfolio__card:hover,
+/* .portfolio__card:hover,
 .portfolio__card:focus,
 .project:hover,
 .project:focus {
@@ -633,12 +633,19 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project__image {
+.portfolio__card:focus .overlay,
+.portfolio__card:hover .overlay,
+.project:hover .overlay,
+.project:focus .overlay {
+  transform: translateY(-100%);
+} */
+
+/* .project__image {
   position: relative;
   overflow: hidden;
-}
+} */
 
-.overlay__content {
+/* .overlay__content {
   position: absolute;
 
   font-size: 18px;
@@ -649,9 +656,9 @@ img {
   max-width: 322px;
   left: 25px;
   top: 63px;
-}
+} */
 
-.overlay {
+/* .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -659,14 +666,7 @@ img {
 
   transform: translateY(0);
   transition: transform var(--transition-time) var(--transition-func);
-}
-
-.portfolio__card:focus .overlay,
-.portfolio__card:hover .overlay,
-.project:hover .overlay,
-.project:focus .overlay {
-  transform: translateY(-100%);
-}
+} */
 
 /* ===================== */
 

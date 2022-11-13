@@ -19,6 +19,10 @@
     @include filter-transition(color, box-shadow, background-color);
   }
 
+  &__button:focus-visible {
+    outline: none;
+  }
+
   &__button:hover,
   &__button:focus {
     color: getColor(primary-white);
