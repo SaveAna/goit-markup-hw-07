@@ -16,7 +16,7 @@
     border-radius: 4px;
     padding: 6px 22px;
 
-    @include filter-transition(color, box-shadow, background-color);
+    @include triple-transition(color, box-shadow, background-color);
   }
 
   &__button:focus-visible {

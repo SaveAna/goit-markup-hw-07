@@ -11,7 +11,8 @@
   transition: $a-property getAnim(time) getAnim(func), $b-property getAnim(time) getAnim(func);
 }
 
-@mixin filter-transition($a-property, $b-property, $c-property) {
+// crash of my genious idea xD
+@mixin triple-transition($a-property, $b-property, $c-property) {
   transition: $a-property getAnim(time) getAnim(func), $b-property getAnim(time) getAnim(func),
     $c-property getAnim(time) getAnim(func);
 }
