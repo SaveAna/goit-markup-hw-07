@@ -1,9 +1,0 @@
-.team {
-    @include vertical-padding ();
-background-color: getBgColor(light);
-
-&__set {
-    display: flex;
-    gap: getSize(grid-gap);
-}
-}
